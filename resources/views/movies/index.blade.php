@@ -17,12 +17,17 @@
 	<thead>
 		<tr>
 			<th> Título </th>
+			<th> Detalle </th>
+
 		</tr>
 	</thead>
 	<tbody>
 		@foreach ($movies as $movie)
 			<td>
 				{{$movie->name}}
+			</td>
+			<td>
+				{{$movie->detail}}
 			</td>
 		@endforeach
 	</tbody>
